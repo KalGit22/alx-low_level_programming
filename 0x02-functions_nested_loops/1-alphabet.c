@@ -3,16 +3,15 @@
 /**
  * main - Entry point
  * Description: prints the alphabet, in lowercase, followed by a new line
- *  Return: Always (0)
+ * Return: void
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	char c;
+	char letter = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
+	while (letter <= 'z')
 	{
-		_putchar(c);
+		_putchar(letter);
 		_putchar('\n');
 	}
-return (0);
 }
