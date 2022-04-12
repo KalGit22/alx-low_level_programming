@@ -13,11 +13,11 @@ void jack_bauer(void)
 	{
 		hour = k / 60;
 		minute = k - 60 * k;
-		_putchar(hour / 10 + '0');
-		_putchar(hour % 10 + '0');
+		_putchar((hour / 10) + '0');
+		_putchar((hour % 10) + '0');
 		_putchar(':');
-		_putchar(minute / 10 + '0');
-		_putchar(minute % 10 + '0');
+		_putchar((minute / 10) + '0');
+		_putchar((minute % 10) + '0');
 		_putchar('\n');
 	}
 }
