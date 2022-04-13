@@ -9,7 +9,7 @@ void jack_bauer(void)
 {
 	int minute, hour, k;
 
-	for (k = 0; k <= 1440; k++)
+	for (k = 0; k < 1440; k++)
 	{
 		hour = k / 60;
 		minute = k - (60 * hour);
