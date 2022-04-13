@@ -12,24 +12,20 @@ void print_to_98(int n)
 
 	if (n < 98)
 	{
-		for (index = n; index <= 98; index++)
+		for (index = n; index <= 97; index++)
 		{
-			if (index != 98)
-			{
-				printf("%d, ", index);
-			}
+			printf("%d, ", index);
 		}
+		printf("%d", 98);
 		_putchar('\n');
 	}
 	else
 	{
-		for (index = n; index >= 98; index--)
+		for (index = n; index >= 97; index--)
 		{
-			if (index != 98)
-			{
-				printf("%d, ", index);
-			}
+			printf("%d, ", index);
 		}
+		printf("%d", 98);
 		_putchar('\n');
 	}
 }
