@@ -17,7 +17,7 @@ void print_to_98(int n)
 			printf("%d", index);
 			if (index != 98)
 			{
-				printf(" ,");
+				printf(", ");
 			}
 		}
 		_putchar('\n');
@@ -29,7 +29,7 @@ void print_to_98(int n)
 			printf("%d", index);
 			if (index != 98)
 			{
-				printf(" ,");
+				printf(", ");
 			}
 		}
 		_putchar('\n');
