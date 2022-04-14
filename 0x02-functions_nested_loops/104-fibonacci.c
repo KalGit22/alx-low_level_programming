@@ -33,10 +33,10 @@ int main(void)
 
 	while (i <= 98)
 	{
-		if (f1o > 0)
-			printf("%lu", f1o);
+		if (f1 > 0)
+			printf("%lu", f1);
 		initial0s = numLength(mx) - 1 - numLength(f1);
-		while (f1o > 0 && initial0s > 0)
+		while (f1 > 0 && initial0s > 0)
 		{
 			printf("%i", 0);
 			initial0s--;
@@ -44,10 +44,10 @@ int main(void)
 		printf("%lu", f1);
 
 		tmp = (f1 + f2) % mx;
-		tmpo = f1o + f2o + (f1 + f2) / mx;
+		tmp = f1 + f2 + (f1 + f2) / mx;
 		f1 = f2;
-		f1o = f2o;
-		f2o = tmpo;
+		f1 = f2;
+		f2 = tmp;
 
 		if (i != 98)
 			printf(", ");
