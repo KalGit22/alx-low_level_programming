@@ -12,9 +12,8 @@ void print_numbers(void)
 	k = 0;
 
 	for (k = 0; k < 10; k++)
-	{
+
 		_putchar(k + '0');
-		_putchar('\n');
-	}
-	return (0);
+
+	_putchar('\n');
 }
