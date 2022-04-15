@@ -2,6 +2,7 @@
 
 /**
  * print_triangle - check for a digit
+ * @size : integer type
  * Return:void
  */
 
