@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main -  generates random valid passwords for the program 101-crackme
+ * main -  generates random valid passwords for the program
  *
  * Return: 0
  */
@@ -21,5 +21,5 @@ int main(void)
 		putchar(ch);
 	}
 	putchar(2772 - x);
-	return (o);
+	return (0);
 }
