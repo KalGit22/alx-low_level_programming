@@ -13,7 +13,7 @@ int main(void)
 	int x;
 	char ch;
 
-	srand(time(NULL));
+	rand(time(NULL));
 	while (x <= 2645)
 	{
 		ch = rand() % 128;
