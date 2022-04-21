@@ -14,7 +14,8 @@ void rev_string(char *s)
 	for (ls = 0; s[ls] != '\0'; ls++)
 	;
 	k = 0;
-	half = ls / 2;while (half--)
+	half = ls / 2;
+	while (half--)
 	{
 		tempo = s[ls - k - 1];
 		s[ls - k - 1] = s[k];
