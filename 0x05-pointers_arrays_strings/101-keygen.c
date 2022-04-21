@@ -8,12 +8,13 @@
  * Return: 0
  */
 
-extern int rand (void) __THROW
+int main()
 {
+
 	int x;
 	char ch;
 
-	rand(time(NULL));
+	srand(time(NULL));
 	while (x <= 2645)
 	{
 		ch = rand() % 128;
