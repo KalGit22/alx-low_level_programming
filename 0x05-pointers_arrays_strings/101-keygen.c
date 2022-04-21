@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int main(void)
+extern int rand (void) __THROW
 {
 	int x;
 	char ch;
