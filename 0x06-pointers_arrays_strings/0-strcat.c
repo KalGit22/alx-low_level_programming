@@ -12,7 +12,7 @@ char *_strcat(char *dest, const char *src)
 	int i = 0, j = 0;
 
 
-	while (src[j] != '\0')
+	while (src[j++])
 	{
 		j++;
 	}
