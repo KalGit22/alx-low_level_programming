@@ -7,14 +7,14 @@
 
 int main(void)
 {
-	int x;
+	int n;
 
-	a[5];
+	inta[5];
 
 	int *p;
 
 	a[2] = 1024;
-	p = &x;
+	p = &n;
 	/*
 	 * write your line of code here...
 	 * Remember:
