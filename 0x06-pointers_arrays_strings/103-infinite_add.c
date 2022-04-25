@@ -3,6 +3,7 @@
 /**
  * print_number - print numbers
  * @n: input int num
+ *
  * Return: nothing
  */
 
