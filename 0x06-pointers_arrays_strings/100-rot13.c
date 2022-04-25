@@ -8,37 +8,30 @@
 
 char *rot13(char *str)
 {
-	int indx1 = 0, indx2;
+	int i;
 
-	char letter[52] = {'A', 'B', 'C', 'D', 'E', 'F',
-		'G', 'H', 'I', 'J', 'K', 'L',
-		'M', 'N', 'O', 'P', 'Q', 'R',
-		'S', 'T', 'U', 'V', 'W', 'X',
-		'Y', 'Z', 'a', 'b', 'c', 'd',
-		'e', 'f', 'g', 'h', 'i', 'j',
-		'k', 'l', 'm', 'n', 'o', 'p',
-		'q', 'r', 's', 't', 'u', 'v',
-		'w', 'x', 'y', 'z'};
-
-	char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S',
-		'T', 'U', 'V', 'W', 'X', 'Y',
-		'Z', 'A', 'B', 'C', 'D', 'E',
-		'F', 'G', 'H', 'I', 'J', 'K',
-		'L', 'M', 'n', 'o', 'p', 'q',
-		'r', 's', 't', 'u', 'v', 'w',
-		'x', 'y', 'z', 'a', 'b', 'c',
-		'd', 'e', 'f', 'g', 'h', 'i',
-		'j', 'k', 'l', 'm'};
-	while (str[indx1])
+	for (i = 0; str[i]; i++)
 	{
-		for (indx2 = 0; indx2 < 52; indx2++)
+		if (str[i] >= 'a' && str[i] <= 'm')
 		{
-			if (str[indx1] == letter[indx2])
-				str[indx1] = rot13key[indx2];
-			break;
+			str[i] += 13;
+			continue;
+		}
+		if (str[i] >= 'A' && str[i] <= 'M')
+		{
+			str[i] += 13;
+			continue;
+		}
+		if (str[i] >= 'n' && str[i] <= 'z')
+		{
+			str[i] -= 13;
+			continue;
+		}
+		if (str[i] >= 'N' && str[i] <= 'Z')
+		{
+			str[i] -= 13;
+			continue;
 		}
 	}
-	indx1++;
-}
-return (str);
+	return (str);
 }
