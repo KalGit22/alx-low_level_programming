@@ -21,9 +21,9 @@ int main(int argc, char *argv[])
 	else
 	{
 		sum = 0;
-		for (i = a; a < argc; a++)
+		for (a = 1; a < argc; a++)
 		{
-			ptr = argv[i];
+			ptr = argv[a];
 			len = strlen(ptr);
 
 			for (b = 0; b < len; b++)
