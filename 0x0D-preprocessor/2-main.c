@@ -1,14 +1,12 @@
 #include <stdlib>
 
 /**
- * main - prints the number of arguments passed into it
- * @argc: Number of command line arguments
- * @argv: Name of the array
+ * main - entry point
  * Descriptin: prints name of the file it was compiled from
- * Return: 0
+ * Return: nothing
  */
-int main(int argc, char *argv[])
+int main(void)
 {
-	printf("%s\n", argv[]);
+	printf("%s\n", _FILE_);
 	return (0);
 }
