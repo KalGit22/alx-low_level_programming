@@ -3,6 +3,7 @@
 
 /**
  * file - header file
+ * @x: number to be computed
  * Description: function-like macro ABS(x) that
  *              computes the absolute value of a number x
  */
