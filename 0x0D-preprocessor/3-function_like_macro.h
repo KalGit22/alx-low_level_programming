@@ -3,7 +3,6 @@
 
 /**
  * file - header file
- * @x: imput number
  * Description: function-like macro ABS(x) that
  *              computes the absolute value of a number x
  */
