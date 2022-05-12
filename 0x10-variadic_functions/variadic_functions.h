@@ -1,5 +1,5 @@
-#ifndef _FUNCTION_POINTER_H_
-#define _FUNCTION_POINTER_H_
+#ifndef _VARIADIC_FUNCTION_H_
+#define _VARIADIC_FUNCTION_H_
 #include <stdlib.h>
 
 int _putchar(char c);
