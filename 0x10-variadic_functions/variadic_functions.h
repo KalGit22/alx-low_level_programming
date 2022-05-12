@@ -1,6 +1,18 @@
 #ifndef _VARIADIC_FUNCTION_H_
 #define _VARIADIC_FUNCTION_H_
-#include <stdlib.h>
+#include <stdarg.h>
+
+/**
+ * struct printer - A new struct type defining a printer
+ * @symbol: A symbol representing a data type
+ * @print: A function pointer to a function that prints a 
+ *         data type corresponding to symbol.
+ */
+typedef struct printer
+{
+	void (*print)(va_list arg);
+	char *symbol;
+}; printer_t;
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
