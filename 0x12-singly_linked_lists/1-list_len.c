@@ -3,7 +3,7 @@
 /**
  * list_len - Finds the number of elements of list
  * @h: The linked list_t list.
- * @elements: a counter var for size_t (nodes)
+ *
  * Return: The number of elements in h.
  */
 
